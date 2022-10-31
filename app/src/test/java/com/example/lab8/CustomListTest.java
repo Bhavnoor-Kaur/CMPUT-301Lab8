@@ -45,7 +45,7 @@ public class CustomListTest {
         boolean hasCity2 = list.hasCity(newCity2);
 
         assertEquals(false, hasCity2);
-        assertEquals(prevSize - 1, newSize);
+        assertEquals(1, newSize);
 
     }
 
