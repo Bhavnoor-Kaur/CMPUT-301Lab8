@@ -30,7 +30,7 @@ jobs:
         run: chmod +x gradlew
 
       - name: Unit Test
-        run: ./gradlew CustomListTest
+        run: ./gradlew test
   build:
 
     runs-on: ubuntu-latest
