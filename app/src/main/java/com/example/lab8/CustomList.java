@@ -50,10 +50,14 @@ public class CustomList extends ArrayAdapter<City> {
 
     public void addCity(City city) {
         cities.add(city);
-    };
+    }
 
     public boolean hasCity(City city) {
-
-    };
+        if (cities.contains(city)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 
 }
