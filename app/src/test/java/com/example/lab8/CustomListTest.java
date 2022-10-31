@@ -35,17 +35,15 @@ public class CustomListTest {
     @Test
     public void check_deleteCity() {
         City newCity1 = new City("Toronto", "ON");
-        City newCity2 = new City("Vancouver", "BC");
         list.addCity(newCity1);
-        list.addCity(newCity2);
         int prevSize = list.getCount();
 
-        list.deleteCity(newCity2);
+        list.deleteCity(newCity1);
         int newSize = list.getCount();
-        boolean hasCity2 = list.hasCity(newCity2);
+        boolean hasCity1 = list.hasCity(newCity1);
 
-        assertEquals(false, hasCity2);
-        assertEquals(1, newSize);
+        assertEquals(false, hasCity1);
+        assertEquals(0, newSize);
 
     }
 
