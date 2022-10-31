@@ -49,4 +49,13 @@ public class CustomListTest {
 
     }
 
+    @Test
+    public void check_countCities() {
+        City newCity = new City("Winnipeg", "MB");
+        list.addCity(newCity);
+
+        int count = list.countCities();
+        assertEquals(1, count);
+    }
+
 }
